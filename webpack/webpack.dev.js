@@ -33,8 +33,17 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
     },
     entry: {
         polyfills: './src/main/webapp/app/polyfills',
-        global: './src/main/webapp/content/css/global.css',
-        main: './src/main/webapp/app/app.main'
+        global: ['./src/main/webapp/content/css/base.css',
+        './src/main/webapp/content/css/global.css',
+        './src/main/webapp/content/css/_all-skins.min.css',
+        './src/main/webapp/content/css/_style.css',
+        './src/main/webapp/content/css/mui.css',
+        './src/main/webapp/content/css/bootstrap/bootstrap.css',
+        './src/main/webapp/content/css/bootstrap/bootstrap.min.css',
+        './src/main/webapp/content/css/font-awesome.min.css',
+        './src/main/webapp/content/fonts/stylesheet.css'
+    ],
+		main: './src/main/webapp/app/app.main'
     },
     output: {
         path: utils.root('target/www'),
@@ -59,10 +68,10 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
         {
             test: /\.css$/,
             loaders: ['to-string-loader', 'css-loader'],
-            exclude: /(vendor\.css|global\.css)/
+            exclude: /(vendor\.css|global\.css|base\.css|_all-skins\.min\.css|_style\.css|mui\.css|bootstrap\.css|bootstrap\.min\.css|font-awesome\.min\.css|stylesheet\.css)/,
         },
         {
-            test: /(vendor\.css|global\.css)/,
+            test: /(vendor\.css|global\.css|base\.css|_all-skins\.min\.css|_style\.css|mui\.css|bootstrap\.css|bootstrap\.min\.css|font-awesome\.min\.css|stylesheet\.css)/,
             loaders: ['style-loader', 'css-loader']
         }]
     },
