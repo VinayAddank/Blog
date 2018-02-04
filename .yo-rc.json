@@ -35,6 +35,6 @@
     "jwtSecretKey": "7d10aaeb6dbf218419a0b05d25458888c35ccaba",
     "jhiPrefix": "jhi",
     "herokuDeployType": "git",
-    "herokuAppName": null
+    "herokuAppName": "v-addanki-blog"
   }
 }
