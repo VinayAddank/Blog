@@ -33,6 +33,8 @@
     "jhipsterVersion": "4.14.0",
     "packageFolder": "com/vinay/blog",
     "jwtSecretKey": "7d10aaeb6dbf218419a0b05d25458888c35ccaba",
-    "jhiPrefix": "jhi"
+    "jhiPrefix": "jhi",
+    "herokuDeployType": "git",
+    "herokuAppName": null
   }
 }
