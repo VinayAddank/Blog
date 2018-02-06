@@ -88,11 +88,7 @@
     "write-file-webpack-plugin": "4.1.0"
   },
   "engines": {
-<<<<<<< HEAD
     "node": "9.5.0"
-=======
-    "node": "8.9.4"
->>>>>>> 53e85e1cd3363aa555df70e0dfd162720a00ae92
   },
   "resolutions": {
     "source-map": "0.6.1"
